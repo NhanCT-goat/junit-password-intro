@@ -35,8 +35,9 @@ public class PasswordUtilsTest {
     @Test 
     void testAlphanumeric(){
 
-        String password =" yellow";
+        String password ="yellow";
         Boolean actual = PasswordUtils.isAlphanumeric(password);
         assertEquals(true, actual);
     }
+
 }
