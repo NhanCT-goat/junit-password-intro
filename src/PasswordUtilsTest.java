@@ -39,5 +39,11 @@ public class PasswordUtilsTest {
         Boolean actual = PasswordUtils.isAlphanumeric(password);
         assertEquals(true, actual);
     }
-
+    @Test 
+    void testTriple(){
+        String password ="paaas";
+        Boolean actual = PasswordUtils.containsTriple(password);
+        assertEquals(true, actual);
+    }
+     
 }
