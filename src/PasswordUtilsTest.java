@@ -45,5 +45,11 @@ public class PasswordUtilsTest {
         Boolean actual = PasswordUtils.containsTriple(password);
         assertEquals(true, actual);
     }
+    @Test 
+    void testSpecialCharacter(){
+        String password ="@pple";
+        Integer actual = PasswordUtils.countSpecialCharacters(password);
+        assertEquals(1, actual);
+    }
      
 }
