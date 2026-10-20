@@ -47,9 +47,15 @@ public class PasswordUtilsTest {
     }
     @Test 
     void testSpecialCharacter(){
-        String password ="@pple";
+        String password ="$pple";
         int actual = PasswordUtils.countSpecialCharacters(password);
         assertEquals(1, actual);
+    }
+    @Test 
+    void testSufficientSpecialCharacters(){
+        String password ="b$n$n$a";
+        Boolean actual = PasswordUtils.hasSufficientSpecialCharacters(password, 3);
+        assertEquals(true, actual);
     }
      
 }
